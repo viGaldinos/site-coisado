@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+ 
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    color: white; */
+    /* line-height: 1.6; */
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.banner .container_slogan{
+    color: black;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 200px;
+}
+.banner .container_slogan p{
+    /* font-family: monospace; */
+    font-family: yu-gothic-light;
+    margin-top: 160px;
+    font-size: 70px;
+    color: rgb(78, 185,152);
+}
+.header{
+    border-bottom: 2px solid rgb(78, 185,152);
+    background-color: rgb(78, 185,152);
+    position: fixed;
+    width: 100vw;
+}
+.logo{
+    height: 100px;
+}
+/* #cadastro{
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 10px 15px;
+} */
+.container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.div_logo{
+    display: flex;
+    align-items: center;
+}
+.container ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 600px;
+}
+.header .container{
+    justify-content: space-around;
+    align-items: center;
+}
+ul a{
+    color: white;
+    text-decoration: none;
+}
+.agora{
+    font-weight: 600;
+}
+
+/* .banner2{
+    height: 100vh;
+    background-image: url("HOME\ CORTE-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.banner{
+    height: 100vh;
+    background-image: url("HOME\ CORTE-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner_semlogo{
+    height: 100vh;
+    background-image: url("Imagemm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    margin: auto;
+}
+.banner .card{
+    margin-top: 130px;
+    background-color: rgb(78, 185, 152);
+    height: 350px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Cadastro  */
+.card_cadastro{
+    margin: auto;
+}
+.banner .card_cadastro{
+    margin-top: 120px;
+    background-color: rgb(78, 185, 152);
+    height: 520px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border:2px solid rgba(0, 0, 0, 0.753);
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 4px;
+}
+.boas_vindas{
+    margin-top: 3px;
+    margin-bottom: 2px;
+    /* text-shadow: 
+    -1px -1px 0px rgba(0, 0, 0, 0.712), 
+    -1px 1px 0px rgba(0, 0, 0, 0.712),      
+     1px -1px 0px rgba(0, 0, 0, 0.712),    
+     1px 0px 0px rgba(0, 0, 0, 0.712); */
+}
+/* h4{
+    text-shadow: 
+    -1px -1px 0px rgba(0, 0, 0, 0.712), 
+    -1px 1px 0px rgba(0, 0, 0, 0.712),      
+     1px -1px 0px rgba(0, 0, 0, 0.712),    
+     1px 0px 0px rgba(0, 0, 0, 0.712);
+} */
+/* Simulador resposta  */
+#simulador_resposta{
+    display: none;
+}
+#simulador{
+    display: flex;
+}
+.banner .simulador_resposta {
+    margin: auto;
+    margin-top: 180px;
+    padding-left: 20px;
+    color: white;
+    
+    flex-direction: column;
+    height: 450px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(78, 185, 151, 0.801);
+    border-radius: 10px;
+
+}
+.banner .simulador {
+    margin: auto;
+    margin-top: 120px;
+    padding-left: 20px;
+    color: white;
+    
+    flex-direction: column;
+    height: 500px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(78, 185, 151, 0.801);
+    border-radius: 10px;
+
+}
+.btn{
+    font-family: monospace;
+    margin-top: 20px;
+    border: 2px solid hsl(191, 86%, 14%);
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 18px;
+    color:hsl(191, 86%, 14%);
+    padding: 10px 10px;
+    background-color: hsl(0, 0%, 100%) ;
+    cursor: pointer;
+    
+}
+
+a::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    z-index: 0;
+    transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -webkit-transform-origin: 0 50%;
+    transform: scaleX(0) scaleY(1);
+    pointer-events: none;
+    transition: all 0.8s;
+}
+
+    a:hover::before {
+        visibility: visible;
+        -webkit-transform: scaleX(5);
+        transform: scaleX(1);
+      }
+
+          
+    .under{
+        text-decoration: underline;
+        text-underline-offset: 0.27em;        
+    }
+    
+
+    .grow:hover
+    {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            transition: all 0.9s ease;
+            text-decoration: none;
+    
+        }
+        .grow { 
+            
+            transition: all 0.9s ease-in-out; 
+    
+            }
+.servicos{
+    background-color:rgba(78, 185, 151, 0.801) ;
+    width: 100vw;
+    height: 100vh;
+    color: #ffffff;
+    font-size: 2em;
+    justify-content: center;
+    display: flex;
+}
+#text2{
+    margin-top: 300px;
+}
+.somos{
+    background-color:rgba(78, 185, 151, 0.801) ;
+    width: 100vw;
+    height: 100vh;
+    color: #ffffff;
+    font-size: 2em;
+    justify-content: center;
+    display: flex;
+}
+#text1{
+    margin-top: 300px;
+}

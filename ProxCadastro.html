@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Prooxmoov.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="div_logo">
+        <img src="logo.png" alt="" class="logo">  
+        <h1>Proxmoov</h1>
+            </div>
+        <ul>
+            <li class="grow"><a href="TelaInicial.html">Home</a> </li>
+            <li class="grow"><a href="#about">Serviços</a> </li>
+            <li class="grow" ><a href="#">Quem somos</a> </li>
+            <li class="grow"><a href="simulador.html">Simulador Financeiro</a></li>
+            <li class="grow"><a href="#">Contato</a> </li>
+            <li><a>|</a> </li>
+            <li class="under"><a href="ProxCadastro.html">Cadastro</a> </li>
+            <li class="grow"><a href="ProxLogin.html">Login</a> </li>
+        </ul>
+    </div>
+</div>
+  
+   <div class="banner">
+       <div class="banner_semlogo">
+       <div class="container">
+            <div class="card_cadastro">
+                <h1 class="boas_vindas">Cadastre-se</h1>
+                <h4>Nome:</h4> <input id="nome" type="text" placeholder="Insira seu nome">
+                <h4>Email:</h4> <input id="email" type="text" placeholder="Insira seu e-mail"> 
+                <h4>Senha:</h4> <input id="senha" type="password" placeholder="Insira sua senha">
+                <h4>Confime sua senha:</h4> <input id="confsenha" type="password" placeholder="Confirme sua senha">
+                <button class="btn" onclick="cadastro()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
+<script>
+    function cadastro(params) {
+    var vr_nome = nome.value;
+    var vr_email = email.value;
+    var vr_senha = senha.value;
+    var vr_confsenha = confsenha.value;
+        if (vr_nome == '' || vr_email == '' || vr_senha == '' || vr_confsenha == '' ) {
+            alert (`Há campos vazios`)
+            if (vr_nome == '') {
+               nome.style.border = `2px solid #ff0000`
+           }else{
+            nome.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+           }
+           if (vr_email == '') {
+               email.style.border = `2px solid #ff0000`
+           }else {
+            email.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+           }
+           if (vr_senha == '') {
+               senha.style.border = `2px solid #ff0000`
+           }else {
+            senha.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+           }
+           if (vr_confsenha == '') {
+               confsenha.style.border = `2px solid #ff0000`
+           }else {
+            confsenha.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+        }
+    }else {
+            nome.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+            email.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+            senha.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+            confsenha.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+        }
+}
+</script>
